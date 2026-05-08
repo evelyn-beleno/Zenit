@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contactenos.css">
+
+    <title>Contáctenos — Zenit</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg p-lg-5">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/Logo_Zenit.png" class="logo" alt="Zenit">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">CONTÁCTENOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link buy" href="#" aria-label="Ver carrito de compras">
+                                <i class="bi bi-bag" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="principal">
+        <section class="contacto-section" aria-labelledby="contacto-heading">
+            <div class="container">
+                <h1 id="contacto-heading" class="visually-hidden">Contáctenos</h1>
+                <div class="row g-5 align-items-start">
+                    <div class="col-12 col-md-6">
+                        <form class="contacto-form" novalidate>
+                            <div class="form-group">
+                                <label for="nombre" class="form-label-zenit">Nombre</label>
+                                <input
+                                    type="text"
+                                    id="nombre"
+                                    name="nombre"
+                                    class="input-zenit"
+                                    autocomplete="name"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="celular" class="form-label-zenit">Número de celular</label>
+                                <input
+                                    type="tel"
+                                    id="celular"
+                                    name="celular"
+                                    class="input-zenit"
+                                    autocomplete="tel"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="correo" class="form-label-zenit">Correo</label>
+                                <input
+                                    type="email"
+                                    id="correo"
+                                    name="correo"
+                                    class="input-zenit"
+                                    autocomplete="email"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mensaje" class="form-label-zenit">Mensaje</label>
+                                <textarea
+                                    id="mensaje"
+                                    name="mensaje"
+                                    class="input-zenit textarea-zenit"
+                                    rows="5"
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-enviar">Enviar</button>
+                        </form>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="mapa-wrap">
+                            <iframe
+                                class="mapa-iframe"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5866!2d-74.0494!3d4.6867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a5b5b5b5b5b%3A0x5b5b5b5b5b5b5b5b!2sCalle%20100%20%2396-36%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1620000000000!5m2!1ses!2sco"
+                                title="Ubicación Zenit — Calle 100 #96-36, Bogotá"
+                                allowfullscreen
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <div class="footer-logo-wrap">
+                    <img src="img/Logo_Zenit_Blanco.png" class="footer-logo-img" alt="Zenit — Activewear for Women">
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Twitter/X de Zenit"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Instagram de Zenit"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Facebook de Zenit"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <nav class="footer-nav" aria-label="Navegación footer">
+                <a href="#">Inicio</a>
+                <a href="#">Nueva Colección</a>
+                <a href="#">Más Vendidos</a>
+                <a href="#">Sobre la Marca</a>
+            </nav>
+
+            <nav class="footer-nav" aria-label="Información y soporte">
+                <a href="#">Guía de Tallas</a>
+                <a href="#">Envíos y Devoluciones</a>
+                <a href="#">Preguntas Frecuentes (FAQ)</a>
+                <a href="#">Términos y Condiciones</a>
+            </nav>
+        </div>
+
+        <div class="footer-contact-bar">
+            <p>
+                Contactanos@zenit.com
+                <span>-</span>
+                319 295 9963
+                <span>-</span>
+                Calle 100 #96 - 36
+            </p>
+        </div>
+
+        <div class="footer-copyright">
+            <p>Zenit by Evelyn Beleño . Copyright 2026 ©</p>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
