@@ -33,4 +33,4 @@ Sitio web estático para la marca Zenit, con enfoque en ropa deportiva y activew
 
 ## Licencia
 
-Este proyecto es un sitio web estático de demostración. Ajusta la licencia según tus necesidades.
+Todos los derechos reservados para Evelyn Beleño Mora.
