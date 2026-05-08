@@ -1,0 +1,388 @@
+:root {
+    --color-azul: #449CFE;
+    --color-gris: #3C3C3C;
+    --color-gris-claro: #F4F4F4;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--color-gris);
+    font-size: 20px;
+    background-color: var(--color-gris-claro);
+}
+
+header {
+    background-color: var(--color-gris-claro);
+}
+
+.principal {
+    background-color: var(--color-gris-claro);
+}
+
+.navbar {
+    padding: 0.75rem 1rem;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+.navbar-toggler {
+    border-color: rgba(60, 60, 60, 0.4);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2860%2C60%2C60%2C0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-link {
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    color: var(--color-gris);
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--color-azul) !important;
+}
+
+a.buy {
+    background-color: var(--color-azul);
+    color: #fff !important;
+    border-radius: 50%;
+    padding: 6px 8px;
+    margin: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+a.buy:hover {
+    background-color: #2280e0;
+}
+
+@media (max-width: 991px) {
+
+    .navbar-collapse {
+        background-color: rgba(255, 255, 255, 0.98);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 15px 15px;
+        padding: 1.5rem 1rem;
+    }
+
+    .navbar-nav {
+        flex-direction: column !important;
+        align-items: center;
+        gap: 0.8rem;
+        text-align: center;
+    }
+
+    .nav-item {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .nav-link {
+        font-size: 1.1rem;
+        padding: 0.9rem 1.5rem !important;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        font-weight: 600;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        background-color: var(--color-azul);
+        color: white !important;
+        transform: translateX(5px);
+    }
+
+    .nav-link.buy {
+        margin-top: 1rem;
+        padding: 12px 20px;
+        border-radius: 50px;
+        background-color: var(--color-azul);
+        width: auto;
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .nav-link.buy:hover {
+        background-color: #2280e0;
+        transform: scale(1.08);
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        padding: 1rem 3rem;
+    }
+
+    .logo {
+        height: auto;
+        width: clamp(80px, 12%, 140px);
+    }
+
+    .navbar-nav {
+        flex-direction: row !important;
+        gap: 0.5rem;
+        margin-left: auto;
+    }
+
+    .navbar-toggler {
+        display: none !important;
+    }
+}
+
+
+.btn {
+    max-width: 375px;
+    width: 100%;
+    height: 65px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn.btn-primary {
+    background-color: var(--color-azul);
+    border: solid 2px var(--color-azul);
+}
+
+.btn.btn-secondary {
+    color: var(--color-gris);
+    border: 2px solid var(--color-gris);
+    background-color: transparent;
+}
+
+.btn.btn-secondary:hover {
+    color: var(--color-gris);
+    background-color: rgba(60, 60, 60, 0.08);
+}
+
+.btn.btn-secondary,
+.btn.btn-primary {
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.banner {
+    width: 86%;
+}
+
+.img-novedad {
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+    border: 1px solid var(--color-gris);
+    border-radius: 20px;
+}
+
+.img-novedad--top {
+    object-position: 0 -6rem;
+}
+
+.mision-vision {
+    position: relative;
+    background-image: url('../img/imagen-banner-2.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+    margin: 25px 0;
+    overflow: visible;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(60, 60, 60, 0.6);
+    z-index: 0;
+    overflow: hidden;
+}
+
+.mision-vision .container-fluid {
+    position: relative;
+    z-index: 1;
+}
+
+.tarjeta-azul {
+    background-color: var(--color-azul);
+    border-radius: 30px;
+    padding: 2rem;
+    margin: 2rem 2rem 0 2rem;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    top: 6rem;
+    z-index: 2;
+}
+
+.logo-mision {
+    width: clamp(120px, 40%, 300px);
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.seccion-marca {
+    padding-top: calc(6rem + 3rem);
+    padding-bottom: 3rem;
+}
+
+.titulo-seccion {
+    color: var(--color-azul);
+    font-size: 44px;
+    margin-bottom: 1.5rem;
+}
+
+.titulo-cierre {
+    color: var(--color-azul);
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    margin-top: 2rem;
+}
+
+.footer {
+    background: linear-gradient(135deg, #449CFE 0%, #1a6fd4 30%, #0d3a7a 65%, #000 100%);
+    padding: 3rem 0 0 0;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2.5rem 4rem 0 4rem;
+    align-items: start;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.footer-logo-img {
+    height: 7rem;
+    width: auto;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1.1rem;
+}
+
+.footer-social a {
+    color: #fff;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.footer-social a:hover {
+    opacity: 0.7;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-nav a {
+    color: rgba(255, 255, 255, 0.88);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 400;
+    transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+    color: #fff;
+}
+
+.footer-contact-bar {
+    padding: 1rem 0 1rem 3rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-contact-bar p {
+    color: var(--color-azul);
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.footer-contact-bar span {
+    margin: 0 0.4rem;
+}
+
+.footer-copyright {
+    background-color: #e8edf2;
+    padding: 0.75rem 4rem;
+    text-align: center;
+}
+
+.footer-copyright p {
+    color: var(--color-azul);
+    font-size: 0.78rem;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .banner {
+        width: 100%;
+        border-radius: 0 !important;
+    }
+
+    .tarjeta-azul {
+        top: 2.5rem;
+        margin: 1rem 1rem 0 1rem;
+    }
+
+    .img-novedad--top {
+        object-position: bottom;
+    }
+
+    .seccion-marca {
+        padding-top: calc(2.5rem + 2rem);
+    }
+
+    .mision-vision {
+        min-height: auto;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+
+    .footer-contact-bar {
+        padding: 1rem 1.5rem;
+        justify-content: center;
+    }
+
+    .footer-contact-bar p {
+        white-space: normal;
+        text-align: center;
+    }
+
+    .footer-copyright {
+        padding: 0.75rem 1.5rem;
+    }
+}
